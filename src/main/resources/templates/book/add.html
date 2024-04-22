@@ -9,12 +9,12 @@
 
 <body>
     <div class="contents">
-        <div th:replace="~{common :: main_sidebar}"></div>
+        <div th:replace="~{common :: main_sidebar}"></div><!--サイドバー-->
         <div class="main_contents">
-            <div th:replace="~{common :: header}"></div>
+            <div th:replace="~{common :: header}"></div><!--ヘッダー-->
             <div class="inner_contens">
-                <div class="page_title">書籍登録</div>
-                <div class="page_contents">
+                <div class="page_title">書籍登録</div><!--タイトル-->
+                <div class="page_contents">              
                     <form id="book_register_form" th:object="${bookMstDto}" th:action="@{/book/add}" method="post">
                         <div class="mb30 flexarea">
                             <span class="text-red">＊は必須項目です</span>
