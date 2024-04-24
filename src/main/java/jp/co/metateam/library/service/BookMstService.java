@@ -102,7 +102,7 @@ public class BookMstService {
 
     public boolean isValidIsbn(String isbn, Model model) {
         if (StringUtils.isEmpty(isbn) || isbn.length() != 13) {
-            model.addAttribute("", "ISBNは13文字で入力してください");
+            model.addAttribute("errISBN", "ISBNは13文字で入力してください");
             return true;
         }
         return false;
